@@ -8,5 +8,5 @@ end
 
 post '/webhook' do
   pp "Receiving Webhook #{params[:webhookId]}"
-  pp JSON.parse(params[:result])
+  pp JSON.parse(params[:payload])
 end
